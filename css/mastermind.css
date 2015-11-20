@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+body {
+    text-align: center;
+    background-color: #E45032;
+    font-size: 14px;
+    color: white;
+}
+
+button,
+input[type=submit] {
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #ba3d23;
+    border: 0px;
+    color: #f48771;
+    font-weight: bold;
+}
+
+button:hover,
+input[type=submit]:hover {
+    background-color: #ff4b27;
+    color: white;
+    border: 1px solid #ba3d23;
+}
+
+#reloj {
+    background-color: #e8ad56;
+    border: 3px dashed brown;
+    font-size: 18px;
+    border-radius: 12px;
+    visibility: hidden;
+    width: 200px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+#instrucciones {
+    float: left;
+    width: 450px;
+    margin: 50px 10% 0px 10%;
+}
+
+#instrucciones li {
+    margin: 10px 0px;
+}
+
+#tablero {
+    float: left;
+    border-radius: 25px;
+    height: 750px;
+    margin: 25px auto;
+    width: 325px;
+    border: 3px dashed #222;
+    padding-top: 15px;
+    background-color: sandybrown;
+}
+
+h1 {
+    margin: 30px 0;
+    padding: 0;
+}
+
+h1,
+h4,
+#cuadroModos,
+#reloj,
+#instrucciones {
+    font-family: 'Press Start 2P';
+}
+
+.modos {
+    padding: 15px 25px;
+}
+
+.fila {
+    height: 40px;
+    width: 300px;
+    border-bottom: 1px solid black;
+    padding: 25px 0px 25px 25px;
+    font-family: inherit;
+}
+
+.circulosGrandes {
+    float: left;
+}
+
+.circulosPequenos {
+    float: left;
+    width: 50px;
+    margin-left: 20px;
+}
+
+.circulo {
+    border-radius: 26px;
+    display: inline-block;
+    height: 40px;
+    margin: 0 5px;
+    width: 40px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 25px;
+    border: 1px solid black;
+}
+
+.circulito {
+    border-radius: 13px;
+    border: 1px solid black;
+    height: 12px;
+    margin: 3.5px 2px 2.5px;
+    float: left;
+    width: 12px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 25px;
+}
+
+#comprobar {
+    color: black;
+    background-color: #e69855;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 30px;
+    border: 2px solid #222;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+#comprobar:hover {
+    background-color: brown;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+.circuloPosible {
+    border-radius: 26px;
+    display: inline-block;
+    height: 40px;
+    margin: 0 5px;
+    width: 40px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 25px;
+    border: 1px solid black;
+}

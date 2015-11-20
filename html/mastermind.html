@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="../css/mastermind.css">
+    <script src="../js/mastermind.js">
+    </script>
+    <script src="../js/contrarreloj.js">
+    </script>
+
+</head>
+
+<body>
+    <h1>Mastermind</h1>
+    <h4><a href="../index.html">Volver al menú principal</a></h4>
+    <div id="cuadroModos">
+        Elige modo
+        <button class="modos" onclick="iniciarJuego(4);">4 colores</button>
+        <button class="modos" onclick="iniciarJuego(8);">8 colores</button>
+        <input type="checkbox" name="contrarreloj" id="contrarreloj">¿Contrarreloj?
+    </div>
+    <div id="reloj">
+        <span id="minutos"></span>
+        <span>:</span>
+        <span id="segundos"></span>
+    </div>
+    <div id="instrucciones">
+        <h5>Instrucciones:</h5>
+        <ol>
+            <li>Elige un modo de juego.</li>
+            <li>Haz click en cada círculo para elegir el color que deseas, cada click cambia el color de círculo.</li>
+            <li>Pulsa Comprobar para ver si has ganado.</li>
+            <li>Un circulito negro significa que has acertado el color y la posición, en cambio uno blanco significa que has acetado el color pero no la posición.</li>
+        </ol>
+        <div id="coloresPosibles">
+            <p>Colores posibles:</p>
+        </div>
+    </div>
+    <div id=tablero>
+        <div class="fila">
+            <div class="circulosGrandes">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+            </div>
+            <div class="circulosPequenos">
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="circulosGrandes">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+            </div>
+            <div class="circulosPequenos">
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="circulosGrandes">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+            </div>
+            <div class="circulosPequenos">
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="circulosGrandes">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+            </div>
+            <div class="circulosPequenos">
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="circulosGrandes">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+            </div>
+            <div class="circulosPequenos">
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="circulosGrandes">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+            </div>
+            <div class="circulosPequenos">
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="circulosGrandes">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+                <input type="button" value="" class="circulo">
+            </div>
+            <div class="circulosPequenos">
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+                <div class="circulito"></div>
+            </div>
+        </div>
+        <button onclick="comprobar()" id="comprobar">Comprobar combinación</button>
+    </div>
+</body>
+
+</html>
